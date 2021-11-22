@@ -48,12 +48,6 @@ const Home: NextPage = () => {
                 </Callout>
 
                 <Row justifyContent="center" gutters className="fr-my-3w">
-                    {/*<Col className={styles.center}>Je suis une association et je souhaite signer mon contrat*/}
-                    {/*    d’engagement républicain*/}
-                    {/*</Col>*/}
-                    {/*<Col className={styles.center}>Je suis un service instructeur et je suis en train d’instruire une*/}
-                    {/*    demande de subvention.*/}
-                    {/*</Col>*/}
                     <Col>
                         <Tile>
                             <TileBody
@@ -64,7 +58,7 @@ const Home: NextPage = () => {
                                 <Link href="https://www.demarches-simplifiees.fr/commencer/test/bb36fc57-68a1-4d53-b9f7-944167676920" passHref={true}>
                                     <Button
                                         className="fr-mt-3w"
-                                        title="sign_contract">Je signe
+                                        title="">Je signe le contrat
                                     </Button>
                                 </Link>
                             </TileBody>
@@ -74,14 +68,14 @@ const Home: NextPage = () => {
                         <Tile>
                             <TileBody
                                 titleAs="h3"
-                                title="Je suis un service instructeur et je suis en train d’instruire une demande de subvention."
+                                title="Je suis un service instructeur et je suis en train d’instruire une demande de subvention"
                                 description=""
                                 linkHref=''
                                 className="cta-title">
                                 <Button
                                     disabled
                                     className="fr-mt-3w"
-                                    title="see_associations">Voir les associations
+                                    title="">Voir les associations
                                 </Button>
                             </TileBody>
                         </Tile>
