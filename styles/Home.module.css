@@ -2,6 +2,14 @@
   padding: 0 2rem;
 }
 
+.center {
+  text-align: center;
+}
+
+.cta-title .fr-tile__title {
+  font-size: 1.5rem;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
