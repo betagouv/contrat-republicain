@@ -1,5 +1,9 @@
-.cta-title .fr-tile__title {
-  font-size: 1.5rem;
+.ctaTitle {
+  justify-content: space-between !important;
+}
+
+.ctaTitle > h5 {
+  font-size: 1.3rem !important;
 }
 
 .main {
@@ -14,18 +18,3 @@
 .content {
   flex: 1;
 }
-
-/*.grid {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  flex-wrap: wrap;*/
-/*  max-width: 800px;*/
-/*}*/
-
-/*@media (max-width: 600px) {*/
-/*  .grid {*/
-/*    width: 100%;*/
-/*    flex-direction: column;*/
-/*  }*/
-/*}*/

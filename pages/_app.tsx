@@ -1,4 +1,4 @@
-import {Footer, FooterBody, FooterBodyItem, Header, HeaderBody, Logo, Service} from "@dataesr/react-dsfr";
+import {Footer, FooterBody, FooterBodyItem, FooterBottom, FooterLink, Header, HeaderBody, Logo, Service} from "@dataesr/react-dsfr";
 import type {AppProps} from 'next/app'
 import Link from "next/link";
 import '../styles/globals.css'
@@ -18,24 +18,25 @@ function MyApp({Component, pageProps}: AppProps) {
             <Component {...pageProps} />
             <Footer className="footer">
                 <FooterBody
-                    description="Ce téléservice vous est proposé par l’Etat (Direction de la jeunesse, de l’éducation populaire et de la vie associative)">
-                    <Logo>Service du premier ministre</Logo>
-                    <FooterBodyItem>
-                        <Link href="https://service-public.fr">
-                            service-public.fr
-                        </Link>
-                    </FooterBodyItem>
+                    description="Le code source est ouvert et les contributions sont bienvenues.">
+                    <Logo>Ministère de l&apos;éducation Nationale, de la jeunesse et des sports</Logo>
                     <FooterBodyItem>
                         <Link href="https://github.com/betagouv/contrat-republicain">
                             Code source
                         </Link>
                     </FooterBodyItem>
+                    <FooterBodyItem>
+                        <Link href="https://beta.gouv.fr">
+                            beta.gouv.fr
+                        </Link>
+                    </FooterBodyItem>
                 </FooterBody>
-                {/*<FooterBottom>*/}
-                {/*    <FooterLink href="/">Footer Link</FooterLink>*/}
-                {/*    <FooterLink href="/">Footer Link</FooterLink>*/}
-                {/*    <FooterLink href="/">Footer Link</FooterLink>*/}
-                {/*</FooterBottom>*/}
+                <FooterBottom>
+                    <FooterLink href="/">Accessibilité : non conforme</FooterLink>
+                    <FooterLink href="/">Mentions légales</FooterLink>
+                    <FooterLink href="/">Conditions générales d&apos;utilisation</FooterLink>
+                    <FooterLink href="/">Politique de confidentialité</FooterLink>
+                </FooterBottom>
             </Footer>
         </div>
     )

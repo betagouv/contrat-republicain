@@ -5,8 +5,6 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
     return (
-
-
         <Container className={[styles.content, "fr-my-3w"]}>
             <Row alignItems="middle" spacing="p-4w">
                 <Title as="h1">Le Contrat d&apos;Engagement Républicain (CER)</Title>
@@ -26,9 +24,9 @@ const Home: NextPage = () => {
                     <Tile>
                         <TileBody
                             titleAs="h5"
-                            title="Je suis une association et je souhaite signer mon contrat d’engagement républicain"
+                            title="Je suis une association et je souhaite signer mon contrat d’engagement républicain (CER)"
                             linkHref=''
-                            className="cta-title">
+                            className={styles.ctaTitle}>
                             <Link
                                 href="https://www.demarches-simplifiees.fr/commencer/test/bb36fc57-68a1-4d53-b9f7-944167676920"
                                 passHref={true}>
@@ -43,11 +41,11 @@ const Home: NextPage = () => {
                 <Col>
                     <Tile>
                         <TileBody
-                            titleAs="h3"
-                            title="Je suis un service instructeur et je suis en train d’instruire une demande de subvention"
+                            titleAs="h5"
+                            title="Je suis un service instructeur et je souhaite instruire une demande de subvention"
                             description="Bientôt disponible"
                             linkHref=''
-                            className="cta-title">
+                            className={styles.ctaTitle}>
                             <Button
                                 disabled
                                 className="fr-mt-3w"
